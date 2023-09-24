@@ -7,7 +7,7 @@ self.account__balance=initial_balance
 def deposit(self,amount):
   if amount >0:
     self.__account_balance+=amount
-    print("Deposited  {}.new balance: {}.format(amount,self.__account_balance))
+    print("Deposited  ₹{}.new balance: ₹{}.format(amount,self.__account_balance))
 
   else:
     print("invaid deposit amount.please deposit a positive  amount.")
@@ -15,13 +15,13 @@ def deposit(self,amount):
 def withdrew(self,amount):
   if amount>0 and amount<=self.__account_balance:
     self.__account_balance-=amount
-    print("withdrew   {}. new balance:  {}".format(amount,self.__account_balance))  
+    print("withdrew  ₹ {}. new balance:₹ {}".format(amount,self.__account_balance))  
 
   else:
     print("invalid withdrew amount or  insufficient balance.")
 
 def  dislay_balance(self):
-  print{"Account balance for {} (Account #{}):  {}".format(
+  print{"Account balance for {} (Account #{}): ₹ {}".format(
     self.__account_holder_name,self.__account_number,
     self.__account_balance))
 
